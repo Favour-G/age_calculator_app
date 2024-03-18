@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);  
+    --White: hsl(0, 0%, 100%);
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+}
+input{
+    font-size: 2rem;
+    width: 80%;
+}
+body{
+    background-color: var(--Offwhite);
+}
+.container{
+    margin: 5% auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 2rem 0;
+    background: var(--White);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+}
+.formwrap{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding-bottom: .8rem;
+    padding-left: 2rem;
+}
+.forminput{
+    flex: .25;
+}
+.forminput>label{
+    display: block;
+    color: var(--Smokeygrey);
+    margin-bottom: .2rem;
+    font-size: .8rem;
+}
+.forminput>input{
+  padding: .3rem;
+  outline: none;
+  border: .1rem solid var(--Lightgrey);
+  margin-bottom: .5rem;
+}
+.day-err, .month-err, .year-err{
+    font-size: 11px;
+    color: var(--Lightred);
+}
+.submit{
+    display: flex;
+    align-items: center;
+}
+.submit>div{
+    width: 75%;
+    height: .09rem;
+    background: var(--Lightgrey);
+    margin-left: 2rem;
+}
+.submit>button{
+    background: var(--Purple);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+.submit>button:hover{
+    background: var(--Offblack);
+}
+.calculate>div{
+   display:flex;
+   padding-left: 3rem; 
+   line-height: 3.5rem;
+   
+}
+span{
+    color: var(--Purple);
+    font-size: 3rem;
+    font-weight:600;
+    
+}
+h1{
+    color: var(--Offblack);
+    font-style:italic;
+    font-size: 3rem;
+    font-weight:900;
+}
+@media(max-width:480px){
+    .container{
+        width: 90%;
+    }
+    .forminput>input{
+        width: 90%;
+    }
+    .submit{
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .submit>div{
+        width: 100%;
+    }
+    .submit>button{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

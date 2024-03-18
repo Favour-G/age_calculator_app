@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./agestyle.css">
+</head>
+<body>
+  <section class="container">
+    <form action="">
+      <div class="formwrap">
+         <div class="forminput">
+           <label for="">DAY</label>
+           <input class="day" type="text" placeholder="DD">
+           <p class="day-err"></p>
+         </div>
+         <div class="forminput">
+           <label for="">MONTH</label>
+           <input class="month" type="text" placeholder="MM">
+           <p class="month-err"></p>
+         </div>
+         <div class="forminput">
+           <label for="">YEAR</label>
+           <input class="year" type="text" placeholder="YYYY">
+           <p class="year-err"></p>
+         </div>
+       </div>
+       <div class="submit">
+         <div></div>
+         <button type="submit" class="btn"><img src="./assets/images/icon-arrow.svg" alt="submit"></button>
+       </div>
+    </form>
+
+    <div class="calculate">
+      <div>
+        <span class="year-result">--</span>
+        <h1>years</h1>
+      </div>
+      <div>
+        <span class="month-result">--</span>
+        <h1>months</h1>
+      </div>
+      <div>
+        <span class="day-result">--</span>
+        <h1>days</h1>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gbogi Favour Olamide</a>.
+  </div>
+
+  <script src="./ageapp.js"></script>
+</body>
+</html>
