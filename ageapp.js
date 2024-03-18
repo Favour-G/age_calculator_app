@@ -56,8 +56,11 @@ btn.addEventListener('click', (e)=>{
         month_err.textContent = '';
         year_err.textContent = '';
 
-       const user_year = current_year - year;
-       const user_month = current_month - month;
-       const user_day = current_day - day;
+       const user_year = current_year - year.value;
+       const user_month = current_month - month.value;
+       const user_day = current_day - day.value;
+       year_result.textContent = user_year;
+       month_result.textContent = user_month;
+       day_result.textContent = user_day;
     }
 })
